@@ -110,7 +110,7 @@ interface FilterButtonProps {
 }
 
 const FilterButton = ({ filter, value, text, color }: FilterButtonProps) => {
-    const url = `./#${filter}=${value}`;
+    const url = `/robopon/#${filter}=${value}`;
     return (
         <a href={url} className={styles['filter-button']} style={{ backgroundColor: color, color: color && "white" }}>{text}</a>
     )

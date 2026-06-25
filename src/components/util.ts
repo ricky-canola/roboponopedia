@@ -18,7 +18,7 @@ export function getImageUrl(pon: RoboponData, type: "large" | "tiny" | "animated
         filename += "_animated.gif";
     }
 
-    return "../sprites/" + filename;
+    return "/sprites/" + filename;
 }
 
 export function formatId(id: number) {
