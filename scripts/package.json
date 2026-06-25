@@ -1,0 +1,17 @@
+{
+  "name": "robopon",
+  "version": "1.0.0",
+  "main": "parse.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "fast-png": "^8.0.0",
+    "gif-encoder": "^0.7.2",
+    "png-js": "^2.0.0",
+    "pngjs": "^7.0.0"
+  }
+}
