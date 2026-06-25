@@ -57,7 +57,7 @@ const RoboponCard = ({ data }: RoboponCardProps) => {
         <a href={"./robopon/" + data.id} className={styles.card}>
             <div className={styles.content}>
                 <div className={styles.cell}>
-                    <img src={getImageUrl(data, "large")} alt={data.name} />
+                    <img src={getImageUrl(data, "large", ".")} alt={data.name} />
                 </div>
                 <div className={styles.cell}>
                     {formatId(data.id) + " - " + data.name}

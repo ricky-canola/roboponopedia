@@ -5,7 +5,7 @@ export function lookupRobopon(id: number): RoboponData | undefined {
     return data.robopon.find(d => d.id === id) as RoboponData;
 }
 
-export function getImageUrl(pon: RoboponData, type: "large" | "tiny" | "animated") {
+export function getImageUrl(pon: RoboponData, type: "large" | "tiny" | "animated", root = "..") {
     let filename = String(pon.id).padStart(3, "0") + "_" + pon.name;
 
     if (type === "tiny") {
@@ -18,7 +18,7 @@ export function getImageUrl(pon: RoboponData, type: "large" | "tiny" | "animated
         filename += "_animated.gif";
     }
 
-    return "/sprites/" + filename;
+    return root + "/sprites/" + filename;
 }
 
 export function formatId(id: number) {
